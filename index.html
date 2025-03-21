@@ -6,6 +6,12 @@
     <title>Personal Web Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home_section.css">
+    <link rel="stylesheet" href="css/about_section.css">
+    <link rel="stylesheet" href="css/portfolio_section.css">
+    <link rel="stylesheet" href="css/education_work_section.css">
+    <link rel="stylesheet" href="css/skills_section.css">
+    <link rel="stylesheet" href="css/contact_section.css">
+    <script src="https://kit.fontawesome.com/72da5dddc6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -16,16 +22,21 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#education-work">Education <br> Work Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- HOME SECTION -->
     <section id="home" class="home-section">
-        <div class="rectangle">
+        <div class="rectangle-home">
             <img src="images/profile.jpg" alt="Profile picture" class="profile-picture">
             <h1>Welcome to my personal web</h1>
-            <p>My name is Mina Tranová, and there you will find some information about me and my projects.</p>
+            <p>
+                My name is Mina Tranová, and you will find some information about me
+                and my projects there.
+            </p>
         </div>
     </section>
 
@@ -36,23 +47,442 @@
         <div class="dot"></div>
         <div class="dot"></div>
     </section>
-    <!-- ABOUT ME SECTION -->
+
+    <!-- ABOUT SECTION -->
     <section id="about" class="about-section">
-        
+        <div class="rectangle-about">
+            <h2>About Me</h2>
+            <p>
+                I am a student at the Faculty of Electrical Engineering, 
+                Czech Technical University in Prague, specializing in Software Engineering.
+                Throughout my studies, I have gained knowledge and skills in IT,
+                including the design of large-scale projects - not only from requirements
+                gathering to analysis but also in the development and testing of final
+                projects in various programming languages.
+            </p>
+            <p>
+                I have worked with different development tools such as Git, VS Code, 
+                Intellij IDEA, and Android Studio while creating projects ranging from
+                websites and simple game engines to database management applications and
+                Android apps.
+            </p>
+            <p>
+                I am a communicative, responsible, and quick learner who enjoys working
+                on projects that allow me to apply and further develop my technical skills.
+            </p>
+        </div>
+    </section>
+
+    <section class="dot-separator">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
     </section>
 
     <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="portfolio-section">
-        
+        <div class="rectangle-portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+
+                <div class="button-container">
+                    <button class="nav-button prev-button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+                
+                <div class="project active">
+                    <h3>
+                        Eshop
+                        <img src="images/shopping.png" alt="shopping-picture">
+                    </h3>
+                    <p>
+                        Designed and developed a fully functional website 
+                        for the sale of unused items. The project involved creating the overall 
+                        page structure, designing a user-friendly interface, and ensuring a smooth 
+                        user experience. <br> <br>
+                        Technologies: 
+                        <i class="fa-brands fa-html5"> </i> HTML,
+                        <i class="fa-brands fa-css3-alt"> </i> CSS,
+                        <i class="fa-brands fa-js"> </i> JavaScript,
+                        <i class="fa-brands fa-php"> </i> PHP
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="project">
+                    <h3>
+                        Android Movie App 
+                        <img src="images/cinema.png" alt="cinema-picture">
+                    </h3>
+                    <p>
+                        Developed a mobile application for the Android platform using Kotlin. 
+                        The app provides users with a list of existing movies along with detailed 
+                        information, including descriptions, episode counts, country of origin, and more. 
+                        Additionally, users can interact with the application by adding comments and 
+                        saving movies to their favorites. <br> <br>
+                        Technologies: 
+                        <img src="images/Kotlin.png" alt="kotlin-picture">Kotlin,
+                        Jetpack Compose, REST
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="project">
+                    <h3>
+                        2D Game Engine
+                        <img src="images/game.png" alt="game-picture">
+                    </h3>
+                    <p>
+                        Designed and implemented a game engine for a 2D computer game in which the player 
+                        controls a hero progressing through multiple levels. The main objective is to collect 
+                        specific resources and craft items that unlock access to higher levels. <br>
+                        The game features various obstacles, both static and dynamic, which players can 
+                        overcome using items found on the map or crafted from gathered materials. 
+                        The gameplay emphasizes exploration, resource management, and problem-solving. <br> <br>
+                        Technologies:
+                        <i class="fa-brands fa-java"></i> Java,
+                        JavaFx
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="project">
+                    <h3>
+                        Caterpillar Game
+                        <img src="images/caterpillar.png" alt="caterpillar-picture">
+                    </h3>
+                    <p>
+                        Developed a classic Snake game where the player controls a growing snake that moves around 
+                        the game area, consuming food while avoiding collisions with the walls and itself. 
+                        Each time the snake eats food, it increases in length, making navigation progressively 
+                        more challenging. <br> <br>
+                        Technologies:
+                        <img src="images/C.png" alt="c-picture">
+                        <img src="images/C++.png" alt="cplusplus-picture">
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="project">
+                    <h3>
+                        School Information System
+                        <img src="images/systems.png" alt="information-system-picture">
+                    </h3>
+                    <p>
+                        Developed an application serving as a school information system focused on managing and promoting 
+                        voluntary events such as meetups, barbecues, competitions, excursions, and lectures related 
+                        to the field of study. The system enables students to explore various activities and participate 
+                        in those that interest them, providing essential information and interactive features to simplify 
+                        registration and track attendance. <br> <br>
+                        Technologies:
+                        <i class="fa-brands fa-java"></i> Java,
+                        <img src="images/Spring.png" alt="spring-picture">Spring,
+                        REST,
+                        <img src="images/PostgresSQL.png" alt="postgresql-picture">PostgreSQL
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="project">
+                    <h3>
+                        Food Chain
+                        <img src="images/food-chain.png" alt="food-chain-picture">
+                    </h3>
+                    <p>
+                        Developed a system for tracking the flow of food products using a simplified implementation of blockchain technology. 
+                        The system ensures full traceability of food as it moves through various stages, from production to final sale to customers. 
+                        This process includes key phases such as processing, storage, distribution, and other essential operations, enhancing 
+                        transparency and accountability in the supply chain. <br> <br>
+                        Technologies:
+                        <i class="fa-brands fa-java"></i> Java
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="project">
+                    <h3>
+                        Vehicular - World-leading vehicle CRS software
+                        <img src="images/car.png" alt="car-picture">
+                    </h3>
+                    <p>
+                        CarRS is a Computer Reservation Software for managing and operating vehicle rental companies around the world. 
+                        It handles information about branches, vehicle fleets and their availability in region. Thus the system serves the customers, 
+                        employees and managers - everything is in one place. <br> <br>
+                        Technologies:
+                        <i class="fa-brands fa-java"></i> Java
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="project">
+                    <h3>
+                        Hotel Database
+                        <img src="images/hotel.png" alt="hotel-picture">
+                    </h3>
+                    <p>
+                        Developed an information system for managing hotels and hotel chains, allowing administrators to track key details 
+                        such as location, contact information, and official rating. The system enables efficient management of hotel data, 
+                        including adding new hotels to the chain and updating existing records. <br> <br>
+                        Technologies:
+                        <img src="images/PostgresSQL.png" alt="postgresql-picture"> PostgreSQL,
+                        <i class="fa-brands fa-java"></i> Java
+                    </p>
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-info"></i>
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="button-container">
+                    <button class="nav-button next-button">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="dot-separator">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </section>
+
+    <!-- EDUCATION WORK SECTION -->
+    <section id="education-work" class="education-work-section">
+        <div class="rectangle-education-work">
+
+            <div class="about-education">
+                <h3>Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">2023 <br> - <br> ongoing</div>
+                        <div class="info">
+                            <h4>Czech Technical University in Prague</h4>
+                            <p>
+                                Faculty: Faculty of Electrical Engineering <br>
+                                Study Programme: Software Engineering and Technology <br>
+                                Programme Type: bachelor <br>
+                                Specialization: Enterprise systémy <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">2019 <br> - <br> 2023</div>
+                        <div class="info">
+                            <h4>Secondary Hotel School Vršovická</h4>
+                            <p>
+                                Study Programme: Hotel Management <br>
+                                Four-year full-time study program ending with a 
+                                school-leaving examination
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-education">
+                <h3>Work Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">July 2022 <br> - <br> January 2023</div>
+                        <div class="info">
+                            <h4>Hotel Seven Days Prague</h4>
+                            <p>Waitress</p>
+                            <ul>
+                                <li>Served customers during breakfast hours.</li>
+                                <li>Prepared and served breakfast meals and beverages.</li>
+                                <li>Ensured fast and efficient service in the morning hours.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-education">
+                <h3>Internships</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">2022</div>
+                        <div class="info">
+                            <h4>Stages Hotel Prague</h4>
+                            <p>Waitress</p>
+                            <ul>
+                                <li>Served customers during events and regular operations.</li>
+                                <li>Responsible for preparing and serving food and beverages.</li>
+                                <li>Communicated with guests to ensure a high level of customer service.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">2022</div>
+                        <div class="info">
+                            <h4>O2 Arena</h4>
+                            <p>Waitress</p>
+                            <ul>
+                                <li>Served customers during events and concerts.</li>
+                                <li>Responsible for preparing and serving food and beverages.</li>
+                                <li>Provided fast and efficient service during high visitor volumes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="dot-separator">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+
+        <div class="rectangle-skills">
+            <div class="skills">
+                <div class="title">Skills</div>
+                <div class="skills-info">
+                    <div class="info">
+                        <h3>Programming languages:</h3>
+                        <p>Java, Kotlin, C, C++, Python</p>
+                    </div>
+                    <div class="info">
+                        <h3>Web technologies:</h3>
+                        <p>HTML, CSS, JavaScript, PHP</p>
+                    </div>
+                    <div class="info">
+                        <h3>Databases:</h3>
+                        <p>PostgreSQL, pgAdmin</p>
+                    </div>
+                    <div class="info">
+                        <h3>Development Tools:</h3>
+                        <p>Git, Visual Studio Code, Intellij IDEA,
+                            Android Studio, Enterprise Architect,
+                            Postman, Cisco Packet Tracer
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h3>Microsoft Office Applications:</h3>
+                        <p>Word, Excel, PowerPoint</p>
+                    </div>
+                    <div class="info">
+                        <h3>Design Tools:</h3>
+                        <p>GIMP, Zoner Callisto 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangle-skills">
+            <div class="certifications">
+                <div class="title">Certifications</div>
+                <div class="certifications-info">
+                    <h3>Summer IT School</h3>
+                    <p>
+                        Organization: Czechitas <br>
+                        Period: July 2022 <br>
+                        Description: Completed a course focused on creating simple websites,
+                        vector graphic design, and basic programming.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="dot-separator">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section">
-        
+        <div class="rectangle-contact">
+            <h3>Contact</h3>
+            <p>Feel free to reach out to me via social media or email.</p>
+            <div class="contact-icons">
+                <a href="" target="_blank" class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="" target="_blank" class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="" target="_blank" class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="" target="_blank" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
     </section>
 
 
 
 </body>
 <script src="js/background.js"></script>
+<script src="js/portfolio.js"></script>
 </html>

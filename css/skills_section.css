@@ -1,0 +1,68 @@
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: auto;
+}
+
+.rectangle-skills {
+    display: flex;
+    justify-content: space-between;
+    background-color: #034C53;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
+    text-align: center;
+    width: 40%;
+    height: auto;
+    border: solid 2px black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills, .certifications, .languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 2em;
+    color: lavender;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.skills-info {
+    width: 100%;
+    color: lavender;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-info .info {
+    padding-left: 20px;
+    border: solid 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 96%;
+}
+
+.certifications-info, .languages-info {
+    border: solid 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding-left: 20px;
+    width: 100%;
+    text-align: left;
+    color: lavender;
+}
+
+.skills-info p {
+    line-height: 1.6;
+    color: #bbffef;
+}

@@ -1,0 +1,102 @@
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.rectangle-portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #034C53;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
+    text-align: center;
+    width: 50%;
+    height: auto;
+    border: solid 2px black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: lavender;
+}
+
+.portfolio-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project {
+    display: none;
+    padding: 20px;
+}
+
+.project img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: -5px;
+}
+
+.project.active {
+    display: block;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: lavender;
+}
+
+.project h3 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -15px;
+}
+
+.project p {
+    color: #bbffef;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.project button {
+    border: solid 5px lavender;
+    border-radius: 20px;
+    background-color: transparent;
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.project button a {
+    text-decoration: none;
+    color: lavender;
+    font-size: 1em;
+}
+
+.nav-button {
+    color: lavender;
+    border: solid 5px lavender;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-button:disabled {
+    cursor: not-allowed;
+}
+
+.prev-button, .next-button {
+    background-color: transparent;
+}
