@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Game Engine</title>
+    <link rel="stylesheet" href="../css/projects/eshop.css">
+</head>
+<body>
+
+    <section class="button-section">
+        <a href="../index.html">
+            <img id="button-home" src="../images/home.png" alt="home-picture">
+        </a>
+    </section>
+
+    <section class="main-section">
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/target.png" alt="target-picture">
+                Game Objective:
+            </h2>
+            <p>
+                The player controls a character and must navigate through various levels, 
+                collecting resources and overcoming obstacles. The goal is to gather 
+                a specific combination of materials, craft special items used for combat 
+                or restoring health, and find the key to advance to the next level.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/game-elements.png" alt="game-elements-picture">
+                Game Elements:
+            </h2>
+            <h3>Game Borad:</h3>
+            <ul>
+                <li>Size:</li>
+                <p>The game board is a 10x10 square grid.</p>
+            </ul>
+            <h3>Non-living Obstacles:</h3>
+            <ul>
+                <li>Wall:</li>
+                <p>Blocks the player's movement.</p>
+                <li>Water:</li>
+                <p> The player cannot pass through water tiles 
+                    and must find a way around them.</p>
+                <li>Fire:</li>
+                <p>Fire tiles pose a threat to the player. 
+                    Stepping on fire reduces the player’s health. 
+                    Fire can be extinguished using water.</p>
+            </ul>
+            <h3>Living Obstacles:</h3>
+            <ul>
+                <li>Ghost:</li>
+                <p> Moves across the game board and poses a danger to the player.</p>
+            </ul>
+                
+            </ul>
+            <h3>Items:</h3>
+            <ul>
+                <li>Metal Ore:</li>
+                <p>Used to craft a sword.</p>
+                <li>Water:</li>
+                <p>Used to extinguish fire or to create a potion.</p>
+                <li>Herb:</li>
+                <p>A resource for crafting a potion.</p>
+                <li>Sword:</li>
+                <p>
+                    Used to defend against ghosts. It protects the player once upon 
+                    contact with a ghost but does not kill the ghost. To craft a sword, 
+                    the player needs 3 metal ores.
+                </p>
+                <li>Potion: </li>
+                <p>
+                    Restores 1 health point. To craft a potion, the player needs water 
+                    and a herb.
+                </p>
+                <li>Key:</li>
+                <p>Unlocks doors leading to the next level.</p>
+            </ul>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/inventory.png" alt="inventory-picture">
+                Inventory:
+            </h2>
+            <p>
+                The player can open the inventory by pressing the "I" key (short for "Inventory").
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/handcraft.png" alt="crafting-picture">
+                Crafting items:
+            </h2>
+            <p>
+                New items are crafted in the inventory.
+                Once the player has collected the necessary materials, they can open the inventory.
+                The player selects the "+" option to start crafting.
+                A recipe (e.g., for a sword) is displayed as an icon.
+                The player drags the required resources into designated slots within the recipe.
+                Once all necessary materials are placed, the player confirms the crafting process.
+                The crafted item appears in the inventory upon completion.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/controls.png" alt="controls-picture">
+                Controls:
+            </h2>
+            <p>
+                Movement: Use WASD keys to move up, left, down, and right. <br>
+                Interacting with items: Items are collected automatically when 
+                the player touches them. To interact further, the player must open 
+                the inventory and select an item by clicking on it. Each item can 
+                only be used once.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/saving.png" alt="saving-picture">
+                Saving & Loading:
+            </h2>
+            <p>
+                Saving: The game is automatically saved at the end of each level. <br>
+                Loading: The player resumes from the last saved position upon starting the game.    
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/technologies.png" alt="technologies-picture">
+                Technologies:
+            </h2>
+            <p>
+                <ul>
+                    <li>Java:</li>
+                    <p>
+                        The game is implemented entirely in Java, including all core mechanics 
+                        and logic. Object-oriented principles are used to structure the code 
+                        and manage game entities.
+                    </p>
+                    <li>JavaFx:</li>
+                    <p>
+                        The user interface is developed using JavaFX. It handles rendering, 
+                        user interactions, and visual components such as buttons, inventory 
+                        management, and movement controls.
+                    </p> 
+                    <li>JSON file:</li>
+                    <p>
+                        The game state is stored in JSON files, which contain all relevant data, 
+                        including the positions of all game elements and the items in 
+                        the player's inventory.
+                    </p>
+                    <li>Development tools:</li>
+                    <p>Intellij IDEA, GIMP</p>
+                </ul>
+            </p>
+        </div>
+
+    </section>
+    
+</body>
+<script src="../js/button-home.js"></script>
+</html>
