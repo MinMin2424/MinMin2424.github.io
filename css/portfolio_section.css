@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
+    scroll-margin-top: 80px;
 }
 
 .rectangle-portfolio {

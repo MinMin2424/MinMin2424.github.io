@@ -4,6 +4,7 @@
     align-items: center;
     height: auto;
     margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 .rectangle-home {

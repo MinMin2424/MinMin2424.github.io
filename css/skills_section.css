@@ -5,6 +5,7 @@
     gap: 30px;
     align-items: center;
     height: auto;
+    scroll-margin-top: 80px;
 }
 
 .rectangle-skills {
@@ -41,15 +42,17 @@
     color: lavender;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .skills-info .info {
-    padding-left: 20px;
+    padding: 0 20px;
     border: solid 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
-    width: 96%;
+    width: 100%;
 }
 
 .certifications-info, .languages-info {
@@ -60,9 +63,13 @@
     width: 100%;
     text-align: left;
     color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.skills-info p {
+.skills-info p, .certifications-info p {
     line-height: 1.6;
     color: #bbffef;
 }

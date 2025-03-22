@@ -2,12 +2,11 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
-    /* display: flex; */
     justify-content: center;
     background: linear-gradient(135deg, #92ffc0, #002661);
 }
 
-nav {
+/* nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -44,12 +43,87 @@ nav ul li a {
 nav ul li a:hover {
     font-size: 1.3em;
     animation: glow 0.4s ease-in-out forwards;
-}
+} */
 
 @keyframes glow {
     0% { text-shadow: 0 0 5px #FFA725; }
     50% { text-shadow: 0 0 15px #FFA725, 0 0 30px #e52e71; }
     100% { text-shadow: 0 0 25px #FFA725, 0 0 50px #e52e71, 0 0 70px #ff8a00; }
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: #034C53;
+    transition: left 0.3 ease, width 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 2px black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.side-nav.active {
+    left: 0;
+    width: 250px;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger-menu img {
+    width: 30px;
+    height: 30px;
+}
+
+.side-nav-content {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.side-nav-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav-content ul li {
+    margin: 30px 0;
+}
+
+.side-nav-content ul li a {
+    color: lavender;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-nav-content ul li a img {
+    width: 30px;
+}
+
+.side-nav-content ul li a span {
+    margin-left: 20px;
+    display: none;
+}
+
+.side-nav.active .side-nav-content ul li {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.side-nav.active .side-nav-content ul li a span {
+    display: inline;
 }
 
 .dot-separator {

@@ -11,21 +11,75 @@
     <link rel="stylesheet" href="css/education_work_section.css">
     <link rel="stylesheet" href="css/skills_section.css">
     <link rel="stylesheet" href="css/contact_section.css">
+    <link rel="stylesheet" href="css/components/scrollbar.css">
     <script src="https://kit.fontawesome.com/72da5dddc6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <!-- NAVIGATION -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#education-work">Education <br> Work Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+    <!-- SIDE NAVIGATION BAR -->
+    <nav class="side-nav">
+
+        <div class="burger-menu" >
+            <img src="images/menu-button.png" alt="menu-button-picture" id="burger-menu">
+        </div>
+
+        <div class="side-nav-content" id="side-nav-content">
+            <ul>
+                <li>
+                    <a href="#home" class="nav-link">
+                        <i class="fa-solid fa-house"></i>
+                         <!-- <img src="images/home-lavender.png" alt="home-picture"> -->
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">
+                        <i class="fa-solid fa-user"></i>
+                         <!-- <img src="images/user.png" alt="user-picture"> -->
+                        <span>About me</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">
+                        <!-- <i class="fa-solid fa-briefcase"></i> -->
+                         <!-- <img src="images/coding.png" alt="portfolio-picture"> -->
+                         <i class="fa-solid fa-code"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education-work" class="nav-link">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Education & Work</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-link">
+                        <img src="images/skill.png" alt="skills-picture">
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    
+    <!-- TOP NAVIGATION BAR -->
+    <!-- <nav class="fixed-nav">
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About me</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#education-work" class="nav-link">Education <br> Work Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav> -->
 
     <!-- HOME SECTION -->
     <section id="home" class="home-section">
@@ -181,7 +235,7 @@
                         <img src="images/C++.png" alt="cplusplus-picture">
                     </p>
                     <button>
-                        <a href="">
+                        <a href="projects/caterpillar_game.html">
                             <i class="fa-solid fa-info"></i>
                             Details
                             <i class="fa-solid fa-arrow-right"></i>
@@ -480,6 +534,10 @@
     </section>
 
 </body>
+
 <script src="js/background.js"></script>
 <script src="js/portfolio.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/side-nav.js"></script>
+
 </html>
