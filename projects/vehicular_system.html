@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World-leading vehicle CRS software</title>
+    <link rel="stylesheet" href="../css/projects/project_styles.css">
+    <link rel="stylesheet" href="../css/components/scrollbar.css">
+</head>
+<body>
+    
+    <section class="button-section">
+        <a href="../index.html">
+            <img id="button-home" src="../images/home.png" alt="home-picture">
+        </a>
+    </section>
+
+    <section class="main-section">
+
+        <h1>VEHICLE CRS SOFTWARE</h1>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/pen.png" alt="pen-picture">
+                Description:
+            </h2>
+            <p>
+                CarRS is a world-leading Computer Reservation Software (CRS) 
+                designed for managing and operating vehicle rental companies 
+                globally. The system centralizes information about branches, 
+                vehicle fleets, and their availability, serving customers, 
+                employees, and managers in one integrated platform.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/star.png" alt="star-picture">
+                Functional Reuirements:
+            </h2>
+            <p>
+                <ul>
+                    <li>Branch Management:</li>
+                    <p>
+                        The system maintains records of all company branches.
+                        Each branch includes a manager, a set of employees, 
+                        and a fleet of vehicles.
+                    </p>
+                    <li>Serializable Records:</li>
+                    <p>
+                        All records (branches, employees, vehicles) are 
+                        serializable, allowing them to be stored and loaded from files.
+                    </p>
+                    <li>Logging and Auditing:</li>
+                    <p>
+                        All record manipulations are logged, including information 
+                        about who made changes and what was modified. Record 
+                        deletions are flagged as higher severity compared to other operations.
+                    </p>
+                    <li>Employee Permissions:</li>
+                    <p>
+                        Employees can view the schedule and status of each vehicle.
+                        Employees can mark vehicles as unavailable for renting (e.g., due 
+                        to technical issues).
+                    </p>
+                    <li>Manager Permissions:</li>
+                    <p>
+                        Managers have all employee permissions and additional capabilities 
+                        to add/remove employees and vehicles, as well as modify their properties.
+                    </p>
+                    <li>Customer Features:</li>
+                    <p>
+                        Customers can browse all company branches and view available vehicles.
+                        Customers can book a specific vehicle for a period of 1-30 whole days.
+                    </p>
+                    <li>Vehicle Rent Cost Calculation:</li>
+                    <p>
+                        The daily rent cost for each vehicle is calculated based on:
+                        fuel price (region-dependent),
+                        quarter of the fuel tank capacity,
+                        a predefined margin based on vehicle type.
+                    </p>
+                    <li>Vehicle Cooldown Period:</li>
+                    <p>
+                        After each rental, a vehicle enters a three-day cooldown period during 
+                        which it cannot be rented (e.g., for cleaning, inspection, etc.).
+                    </p>
+                    <li>additional Equipment Rental:</li>
+                    <p>
+                        Customers can rent additional equipment (e.g., caravan, hand truck, life 
+                        jacket) at a fixed daily cost, which includes the company's margin.
+                    </p>
+                </ul>
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>Technologies:</h2>
+            <p>
+                <ul>
+                    <li>Java:</li>
+                    <p>
+                        Used for the development of the system.
+                    </p>
+                    <li>Development Tools:</li>
+                    <p>
+                        IntelliJ IDEA
+                    </p>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+</body>
+<script src="../js/button-home.js"></script>
+<script src="../js/scroll.js"></script>
+</html>

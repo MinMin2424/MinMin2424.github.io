@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/skills_section.css">
     <link rel="stylesheet" href="css/contact_section.css">
     <link rel="stylesheet" href="css/components/scrollbar.css">
+    <link rel="stylesheet" href="css/components/edit-home-form.css">
     <script src="https://kit.fontawesome.com/72da5dddc6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -68,30 +69,36 @@
             </ul>
         </div>
     </nav>
-    
-    <!-- TOP NAVIGATION BAR -->
-    <!-- <nav class="fixed-nav">
-        <ul>
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About me</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#education-work" class="nav-link">Education <br> Work Experience</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav> -->
 
     <!-- HOME SECTION -->
     <section id="home" class="home-section">
         <div class="rectangle-home">
-            <img src="images/profile.jpg" alt="Profile picture" class="profile-picture">
-            <h1>Welcome to my personal web</h1>
-            <p>
-                My name is Mina Tranová, and you will find some information about me
-                and my projects there.
-            </p>
+            <button id="edit-button-home">
+                <i class="fa-solid fa-pen-fancy"></i>
+            </button>
+            <img src="" alt="Profile picture" id="home-picture" class="profile-picture">
+            <h1 id="home-title"></h1>
+            <p id="home-description"></p>
         </div>
     </section>
+
+    <!-- EDIT FORM FOR HOME SECTION -->
+     <section id="edit-home-form">
+        <div class="rectangle-edit-home">
+
+            <h3>Edit Home Section</h3>
+            <form id="home-form">
+                <label for="edit-title">Title:</label>
+                <input type="text" id="edit-title" name="title" required>
+                <label for="edit-description">Description:</label>
+                <textarea name="description" id="edit-description" required></textarea>
+                <label for="edit-image">Image URL:</label>
+                <input type="text" id="edit-image" name="image" required>
+                <button type="submit">Save</button>
+            </form>
+
+        </div>
+     </section>
 
     <section class="dot-separator">
         <div class="dot"></div>
@@ -283,7 +290,7 @@
                         <i class="fa-brands fa-java"></i> Java
                     </p>
                     <button>
-                        <a href="">
+                        <a href="projects/food_chain.html">
                             <i class="fa-solid fa-info"></i>
                             Details
                             <i class="fa-solid fa-arrow-right"></i>
@@ -304,7 +311,7 @@
                         <i class="fa-brands fa-java"></i> Java
                     </p>
                     <button>
-                        <a href="">
+                        <a href="projects/vehicular_system.html">
                             <i class="fa-solid fa-info"></i>
                             Details
                             <i class="fa-solid fa-arrow-right"></i>
@@ -326,7 +333,7 @@
                         <i class="fa-brands fa-java"></i> Java
                     </p>
                     <button>
-                        <a href="">
+                        <a href="projects/hotel_management.html">
                             <i class="fa-solid fa-info"></i>
                             Details
                             <i class="fa-solid fa-arrow-right"></i>
@@ -536,6 +543,8 @@
 </body>
 
 <script src="js/background.js"></script>
+<script src="js/edit/home-edit.js"></script>
+<script src="js/home-data.js"></script>
 <script src="js/portfolio.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/side-nav.js"></script>

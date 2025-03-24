@@ -6,6 +6,7 @@
     align-items: center;
     height: auto;
     scroll-margin-top: 80px;
+    margin-left: 60px;
 }
 
 .rectangle-skills {
@@ -16,7 +17,7 @@
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
     text-align: center;
-    width: 40%;
+    width: 60%;
     height: auto;
     border: solid 2px black;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
