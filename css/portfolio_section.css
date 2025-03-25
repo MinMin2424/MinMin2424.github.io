@@ -48,7 +48,10 @@
 }
 
 .project.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project h3 {
@@ -69,16 +72,19 @@
     margin-bottom: 30px;
 }
 
-.project button {
+.project .btn {
     border: solid 5px lavender;
     border-radius: 20px;
     background-color: transparent;
     height: 50px;
     width: 120px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project button a {
+.project .btn a {
     text-decoration: none;
     color: lavender;
     font-size: 1em;
