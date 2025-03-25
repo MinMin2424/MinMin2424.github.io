@@ -9,11 +9,11 @@
 </head>
 <body>
     
-    <section class="button-section">
+    <div class="button-section">
         <a href="../index.html">
             <img id="button-home" src="../images/home.png" alt="home-picture">
         </a>
-    </section>
+    </div>
 
     <section class="main-section">
 
@@ -38,76 +38,72 @@
                 <img src="../images/star.png" alt="star-picture">
                 Functional Reuirements:
             </h2>
-            <p>
-                <ul>
-                    <li>Branch Management:</li>
-                    <li class="info">
-                        The system maintains records of all company branches.
-                        Each branch includes a manager, a set of employees, 
-                        and a fleet of vehicles.
-                    </li>
-                    <li>Serializable Records:</li>
-                    <li class="info">
-                        All records (branches, employees, vehicles) are 
-                        serializable, allowing them to be stored and loaded from files.
-                    </li>
-                    <li>Logging and Auditing:</li>
-                    <li class="info">
-                        All record manipulations are logged, including information 
-                        about who made changes and what was modified. Record 
-                        deletions are flagged as higher severity compared to other operations.
-                    </li>
-                    <li>Employee Permissions:</li>
-                    <li class="info">
-                        Employees can view the schedule and status of each vehicle.
-                        Employees can mark vehicles as unavailable for renting (e.g., due 
-                        to technical issues).
-                    </li>
-                    <li>Manager Permissions:</li>
-                    <li class="info">
-                        Managers have all employee permissions and additional capabilities 
-                        to add/remove employees and vehicles, as well as modify their properties.
-                    </li>
-                    <li>Customer Features:</li>
-                    <li class="info">
-                        Customers can browse all company branches and view available vehicles.
-                        Customers can book a specific vehicle for a period of 1-30 whole days.
-                    </li>
-                    <li>Vehicle Rent Cost Calculation:</li>
-                    <lic class="info">
-                        The daily rent cost for each vehicle is calculated based on:
-                        fuel price (region-dependent),
-                        quarter of the fuel tank capacity,
-                        a predefined margin based on vehicle type.
-                    </li>
-                    <li>Vehicle Cooldown Period:</li>
-                    <li class="info">
-                        After each rental, a vehicle enters a three-day cooldown period during 
-                        which it cannot be rented (e.g., for cleaning, inspection, etc.).
-                    </li>
-                    <li>additional Equipment Rental:</li>
-                    <li class="info">
-                        Customers can rent additional equipment (e.g., caravan, hand truck, life 
-                        jacket) at a fixed daily cost, which includes the company's margin.
-                    </li>
-                </ul>
-            </p>
+            <ul>
+                <li>Branch Management:</li>
+                <li class="info">
+                    The system maintains records of all company branches.
+                    Each branch includes a manager, a set of employees, 
+                    and a fleet of vehicles.
+                </li>
+                <li>Serializable Records:</li>
+                <li class="info">
+                    All records (branches, employees, vehicles) are 
+                    serializable, allowing them to be stored and loaded from files.
+                </li>
+                <li>Logging and Auditing:</li>
+                <li class="info">
+                    All record manipulations are logged, including information 
+                    about who made changes and what was modified. Record 
+                    deletions are flagged as higher severity compared to other operations.
+                </li>
+                <li>Employee Permissions:</li>
+                <li class="info">
+                    Employees can view the schedule and status of each vehicle.
+                    Employees can mark vehicles as unavailable for renting (e.g., due 
+                    to technical issues).
+                </li>
+                <li>Manager Permissions:</li>
+                <li class="info">
+                    Managers have all employee permissions and additional capabilities 
+                    to add/remove employees and vehicles, as well as modify their properties.
+                </li>
+                <li>Customer Features:</li>
+                <li class="info">
+                    Customers can browse all company branches and view available vehicles.
+                    Customers can book a specific vehicle for a period of 1-30 whole days.
+                </li>
+                <li>Vehicle Rent Cost Calculation:</li>
+                <lic class="info">
+                    The daily rent cost for each vehicle is calculated based on:
+                    fuel price (region-dependent),
+                    quarter of the fuel tank capacity,
+                    a predefined margin based on vehicle type.
+                </li>
+                <li>Vehicle Cooldown Period:</li>
+                <li class="info">
+                    After each rental, a vehicle enters a three-day cooldown period during 
+                    which it cannot be rented (e.g., for cleaning, inspection, etc.).
+                </li>
+                <li>additional Equipment Rental:</li>
+                <li class="info">
+                    Customers can rent additional equipment (e.g., caravan, hand truck, life 
+                    jacket) at a fixed daily cost, which includes the company's margin.
+                </li>
+            </ul>
         </div>
 
         <div class="eshop-info">
             <h2>Technologies:</h2>
-            <p>
-                <ul>
-                    <li>Java:</li>
-                    <li class="info">
-                        Used for the development of the system.
-                    </li>
-                    <li>Development Tools:</li>
-                    <li class="info">
-                        IntelliJ IDEA
-                    </li>
-                </ul>
-            </p>
+            <ul>
+                <li>Java:</li>
+                <li class="info">
+                    Used for the development of the system.
+                </li>
+                <li>Development Tools:</li>
+                <li class="info">
+                    IntelliJ IDEA
+                </li>
+            </ul>
         </div>
     </section>
 

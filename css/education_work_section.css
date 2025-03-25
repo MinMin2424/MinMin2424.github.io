@@ -29,6 +29,7 @@
     border-radius: 30px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border: solid 5px lavender;
+    padding-bottom: 20px;
 }
 
 .about-education h3 {
