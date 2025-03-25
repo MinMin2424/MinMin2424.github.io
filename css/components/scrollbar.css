@@ -12,3 +12,10 @@ body::-webkit-scrollbar-thumb {
     background: lavender;
     border-radius: 6px;
 }
+
+@-moz-document url-prefix() {
+    body {
+        scrollbar-width: auto;
+        scrollbar-color: lavender #034C53;
+    }
+}

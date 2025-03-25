@@ -1,6 +1,7 @@
 const editHomeButton = document.getElementById("edit-button-home");
+const cancelEditButton = document.getElementById("cancel-edit-button");
 const homeSection = document.getElementById("home");
-const editForm = document.getElementById("edit-home-form");
+const editFormSection = document.getElementById("edit-home-form");
 
 editHomeButton.addEventListener("click", async () => {
     const response = await fetch("../../json/home_section.json");
@@ -10,17 +11,20 @@ editHomeButton.addEventListener("click", async () => {
     document.getElementById("edit-description").value = data.description;
     document.getElementById("edit-image").value = data.image;
 
-    editForm.style.display = "flex";
+    editFormSection.style.display = "flex";
     homeSection.style.display = "none";
 })
 
-document.getElementById("home-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
+cancelEditButton.addEventListener("click", () => {
+    editFormSection.style.display = "none";
+    homeSection.style.display = "flex";
+})
 
+export function updatedData(title, description, image) {
     const updatedData = {
-        title: document.getElementById("edit-title").value,
-        description: document.getElementById("edit-description").value,
-        image: document.getElementById("edit-image").value
+        title: title,
+        description: description,
+        image: image
     };
 
     localStorage.setItem("homeData", JSON.stringify(updatedData));
@@ -29,6 +33,6 @@ document.getElementById("home-form").addEventListener("submit", async (e) => {
     document.getElementById("home-description").textContent = updatedData.description;
     document.getElementById("home-picture").src = `../../${updatedData.image}`;
 
-    editForm.style.display = "none";
+    editFormSection.style.display = "none";
     homeSection.style.display = "flex";
-})
+}

@@ -4,6 +4,9 @@ body {
     color: #333;
     justify-content: center;
     background: linear-gradient(135deg, #92ffc0, #002661);
+    background: radial-gradient(
+        circle at 30% 50%, #92ffc0 0%, #002661 100%
+    ) fixed ;
 }
 
 /* nav {

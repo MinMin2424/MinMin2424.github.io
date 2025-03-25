@@ -28,6 +28,23 @@
     font-size: 1.8em;
 }
 
+.cancel-edit-div {
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+    cursor: pointer;
+    color: lavender;
+    border: solid 2px lavender;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cancel-edit-button {
+    width: 60%;
+}
+
 #home-form {
     display: flex;
     flex-direction: column;
@@ -66,4 +83,8 @@
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+}
+
+#edit-image {
+    color: lavender;
 }

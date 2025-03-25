@@ -86,14 +86,17 @@
      <section id="edit-home-form">
         <div class="rectangle-edit-home">
 
+            <div class="cancel-edit-div">
+                <img src="images/back.png" alt="back-arrow-picture" id="cancel-edit-button">
+            </div>
             <h3>Edit Home Section</h3>
             <form id="home-form">
                 <label for="edit-title">Title:</label>
-                <input type="text" id="edit-title" name="title" required>
+                <input type="text" id="edit-title" name="title" required autofocus>
                 <label for="edit-description">Description:</label>
                 <textarea name="description" id="edit-description" required></textarea>
                 <label for="edit-image">Image URL:</label>
-                <input type="text" id="edit-image" name="image" required>
+                <input type="text" id="edit-image" name="image" required disabled>
                 <button type="submit">Save</button>
             </form>
 
@@ -543,7 +546,8 @@
 </body>
 
 <script src="js/background.js"></script>
-<script src="js/edit/home-edit.js"></script>
+<script type="module" src="js/edit/home-edit.js"></script>
+<script type="module" src="js/form-validation.js"></script>
 <script src="js/home-data.js"></script>
 <script src="js/portfolio.js"></script>
 <script src="js/scroll.js"></script>
