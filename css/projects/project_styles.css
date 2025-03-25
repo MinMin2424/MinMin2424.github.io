@@ -78,10 +78,16 @@ body {
     font-size: 1.3em;
 }
 
-.eshop-info p {
+.eshop-info .info, .eshop-info p {
     color: #bbffef;
     font-size: 1.2em;
     line-height: 1.5;
+    font-weight: lighter;
+}
+
+.eshop-info .info {
+    list-style: none;
+    margin: 20px 0;
 }
 
 .eshop-info img {
@@ -95,7 +101,17 @@ body {
     font-weight: bold;
 }
 
-.reports {
+.info .reports {
     font-weight: bold;
     color: lavender;
+    font-size: 1em;
+}
+
+.info .info-item {
+    font-size: 1em;
+    list-style: none;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: lighter;
+    color: #bbffef;
 }
