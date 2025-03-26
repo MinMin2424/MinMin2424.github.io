@@ -1,4 +1,4 @@
-document.querySelectorAll(".nav-link").forEach( link => {
+document.querySelectorAll(".link").forEach( link => {
 
     link.addEventListener("click", (e) => {
 

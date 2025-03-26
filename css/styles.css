@@ -104,7 +104,7 @@ nav ul li a:hover {
 .side-nav-content ul li a {
     color: lavender;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +127,11 @@ nav ul li a:hover {
 
 .side-nav.active .side-nav-content ul li a span {
     display: inline;
+}
+
+.download-cv {
+    border-top: solid 2px lavender;
+    padding-top: 30px;
 }
 
 .dot-separator {
