@@ -115,3 +115,36 @@ body {
     font-weight: lighter;
     color: #bbffef;
 }
+
+.eshop-info .video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container .video {
+    width: 90%;
+    border: solid 4px lavender;
+    border-radius: 30px;
+}
+
+.eshop-info .video-modification {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-modification button {
+    border-radius: 8px;
+    height: 30px;
+    padding: 0 15px;
+    border: solid 2px lavender;
+    border-radius: 30px;
+    background: #034C53;
+    color: lavender;
+    font-size: 1em;
+    cursor: pointer;
+}
