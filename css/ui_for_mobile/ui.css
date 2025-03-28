@@ -1,0 +1,61 @@
+/* MAIN PAGE */
+@media screen and (max-width: 450px) {
+    .side-nav {
+        display: none;
+    }
+    .dot-separator {
+        margin-left: 0px !important;
+    }
+
+    .home-section,
+    .about-section,
+    .portfolio-section,
+    .education-work-section,
+    .skills-section,
+    .contact-section {
+        margin-left: 0px !important;
+    }
+    #edit-home-form {
+        margin-left: 0px !important;
+
+    }
+    .rectangle-home,
+    .rectangle-contact,
+    .rectangle-edit-home {
+        width: 70% !important;
+    }
+    .rectangle-about, 
+    .rectangle-portfolio,
+    .rectangle-education-work,
+    .rectangle-skills {
+        width: 90% !important;
+        padding: 10px !important;
+    }
+    .rectangle-portfolio h3 {
+        margin-top: -10px !important;
+    }
+    .rectangle-education-work {
+        padding: 5px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-education {
+        width: 96% !important;
+    }
+    .rectangle-skills .info,
+    .rectangle-skills .certifications-info {
+        width: 88% !important;
+    }
+    .rectangle-skills .title {
+        margin-top: 30px !important;
+    }   
+}
+
+/* PROJECT PAGES */
+@media screen and (max-width: 450px){
+    .main-section {
+        width: 90%;
+        padding: 15px;
+    }
+}
