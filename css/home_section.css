@@ -45,7 +45,7 @@
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    animation: float 4s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {

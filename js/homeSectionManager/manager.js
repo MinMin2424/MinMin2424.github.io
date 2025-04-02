@@ -22,6 +22,7 @@ class HomeSectionManager {
             const savedData = localStorage.getItem("homeData");
             if (savedData) {
                 this.updateUI(JSON.parse(savedData));
+                return;
             }
             const response = await fetch(this.jsonPath);
             const data = await response.json();
