@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Web Portfolio</title>
+    <title>Osobní portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/ui_for_mobile/ui.css">
     <link rel="stylesheet" href="css/home_section.css">
@@ -30,13 +30,13 @@
                 <li>
                     <a href="#home" class="nav-link link">
                         <i class="fa-solid fa-house"></i>
-                        <span>Home</span>
+                        <span>Domů</span>
                     </a>
                 </li>
                 <li>
                     <a href="#about" class="nav-link link">
                         <i class="fa-solid fa-user"></i>
-                        <span>About me</span>
+                        <span>O mně</span>
                     </a>
                 </li>
                 <li>
@@ -48,37 +48,37 @@
                 <li>
                     <a href="#education-work" class="nav-link link">
                         <i class="fa-solid fa-graduation-cap"></i>
-                        <span>Education & Work</span>
+                        <span>Vzdělání & Pracovní zkušenost</span>
                     </a>
                 </li>
                 <li>
                     <a href="#skills" class="nav-link link">
                         <img src="images/skill.png" alt="skills-picture">
-                        <span>Skills</span>
+                        <span>Dovednosti</span>
                     </a>
                 </li>
                 <li>
                     <a href="#contact" class="nav-link link">
                         <i class="fa-solid fa-envelope"></i>
-                        <span>Contact</span>
+                        <span>Kontakt</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link download-cv" id="download-cv">
                         <i class="fa-solid fa-download"></i>
-                        <span>Download CV (PDF)</span>
+                        <span>Stáhnout životopis (PDF)</span>
                     </a>
                 </li>
                 <li>
                     <a href="./docs/Minh_Thu_Tranova_cv.pdf" class="nav-link" target="_blank">
                         <i class="fa-solid fa-file-pdf"></i>
-                        <span>Open CV (PDF)</span>
+                        <span>Otevřít životopis (PDF)</span>
                     </a>
                 </li>
                 <li>
                     <a href="./index_cs.html" class="nav-link">
-                         <img src="./images/cz.png" alt="cz-picture">
-                        <span>Czech</span>
+                        <img src="./images/eng.png" alt="eng-picture">
+                        <span>English</span>
                     </a>
                 </li>
             </ul>
@@ -88,12 +88,14 @@
     <!-- HOME SECTION -->
     <section id="home" class="home-section">
         <div class="rectangle-home">
-            <button id="edit-button-home">
+            <!-- <button id="edit-button-home">
                 <i class="fa-solid fa-pen-fancy"></i>
-            </button>
+            </button> -->
             <img src="images/profile.jpg" alt="Profile picture" id="home-picture" class="profile-picture">
-            <h1 id="home-title">Default heading</h1>
-            <p id="home-description"></p>
+            <h1 id="home-title">Vítejte na mém osobním webu</h1>
+            <p id="home-description">
+                Jmenuji se Mina Tranová a zde naleznete informace o mně a mých projektech.
+            </p>
         </div>
     </section>
 
@@ -104,15 +106,15 @@
             <div class="cancel-edit-div">
                 <img src="images/back.png" alt="back-arrow-picture" id="cancel-edit-button">
             </div>
-            <h3>Edit Home Section</h3>
+            <h3>Upravit domovskou sekci</h3>
             <form id="home-form">
-                <label for="edit-title">Title:</label>
+                <label for="edit-title">Nadpis:</label>
                 <input type="text" id="edit-title" name="title" required autofocus>
-                <label for="edit-description">Description:</label>
+                <label for="edit-description">Popis:</label>
                 <textarea name="description" id="edit-description" required></textarea>
                 <!-- <label for="edit-image">Image URL:</label>
                 <input type="text" id="edit-image" name="image" required disabled> -->
-                <button type="submit">Save</button>
+                <button type="submit">Uložit</button>
             </form>
 
         </div>
@@ -129,24 +131,24 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="about-section">
         <div class="rectangle-about">
-            <h2>About Me</h2>
+            <h2>O mně</h2>
             <p>
-                I am a student at the Faculty of Electrical Engineering, 
-                Czech Technical University in Prague, specializing in Software Engineering.
-                Throughout my studies, I have gained knowledge and skills in IT,
-                including the design of large-scale projects - not only from requirements
-                gathering to analysis but also in the development and testing of final
-                projects in various programming languages.
+                Jsem studentkou Fakulty elektrotechnické Českého vysokého
+                učení technického v Praze, se specializací na softwarové
+                inženýrství. Během studia jsem získala znalosti a dovednosti v
+                oblasti IT, včetně návrhu rozsáhlejších projektů – nejen od sběru
+                požadavků po analýzu, ale i při samotném vývoji a testování
+                finálních řešení v různých programovacích jazycích.
             </p>
             <p>
-                I have worked with different development tools such as Git, VS Code, 
-                Intellij IDEA, and Android Studio while creating projects ranging from
-                websites and simple game engines to database management applications and
-                Android apps.
+                Při tvorbě projektů, od webových stránek a jednoduchých herních
+                enginů až po aplikace pro správu databází či mobilní aplikace pro
+                Android, jsem pracovala s různými vývojovými nástroji.
             </p>
             <p>
-                I am a communicative, responsible, and quick learner who enjoys working
-                on projects that allow me to apply and further develop my technical skills.
+                Jsem komunikativní, zodpovědná a rychle se učím. Baví mě
+                pracovat na projektech, kde mohu využít a dále rozvíjet své
+                technické dovednosti.
             </p>
         </div>
     </section>
@@ -173,24 +175,23 @@
 
                 <div class="project active">
                     <h3>
-                        2D Game Engine
+                        2D herní engine
                         <img src="images/game.png" alt="game-picture">
                     </h3>
                     <p>
-                        Designed and implemented a game engine for a 2D computer game in which the player 
-                        controls a hero progressing through multiple levels. The main objective is to collect 
-                        specific resources and craft items that unlock access to higher levels. <br>
-                        The game features various obstacles, both static and dynamic, which players can 
-                        overcome using items found on the map or crafted from gathered materials. 
-                        The gameplay emphasizes exploration, resource management, and problem-solving. <br> <br>
-                        Technologies:
+                        Návrh a implementace herního enginu pro 2D počítačovou hru, ve které hráč 
+                        ovládá hrdinu procházejícího několika úrovněmi. Hlavním cílem je sbírat 
+                        specifické zdroje a vyrábět předměty, které odemykají přístup k vyšším úrovním. <br>
+                        Hra obsahuje různé překážky, statické i dynamické, které hráč může překonat 
+                        pomocí předmětů nalezených na mapě nebo vyrobených ze sebraných materiálů. <br> <br>
+                        Technologie:
                         <i class="fa-brands fa-java"></i> Java,
                         JavaFx
                     </p>
                     <div class="btn">
                         <a href="projects/escape_game.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -202,11 +203,10 @@
                         <img src="images/shopping.png" alt="shopping-picture">
                     </h3>
                     <p>
-                        Designed and developed a fully functional website 
-                        for the sale of unused items. The project involved creating the overall 
-                        page structure, designing a user-friendly interface, and ensuring a smooth 
-                        user experience. <br> <br>
-                        Technologies: 
+                        Návrh a vývoj plně funkčního webu pro prodej nepoužívaných předmětů. 
+                        Projekt zahrnoval vytvoření struktury stránky, design uživatelsky přívětivého 
+                        rozhraní a zajištění plynulého uživatelského zážitku. <br> <br>
+                        Technologie: 
                         <i class="fa-brands fa-html5"> </i> HTML,
                         <i class="fa-brands fa-css3-alt"> </i> CSS,
                         <i class="fa-brands fa-js"> </i> JavaScript,
@@ -215,7 +215,7 @@
                     <div class="btn">
                         <a href="projects/eshop.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -223,23 +223,23 @@
 
                 <div class="project">
                     <h3>
-                        Android Movie App 
+                        Mobilní aplikace pro filmy (Android)
                         <img src="images/cinema.png" alt="cinema-picture">
                     </h3>
                     <p>
-                        Developed a mobile application for the Android platform using Kotlin. 
-                        The app provides users with a list of existing movies along with detailed 
-                        information, including descriptions, episode counts, country of origin, and more. 
-                        Additionally, users can interact with the application by adding comments and 
-                        saving movies to their favorites. <br> <br>
-                        Technologies: 
+                        Vývoj mobilní aplikace pro platformu Android v Kotlinu. 
+                        Aplikace uživatelům zobrazuje seznam existujících filmů včetně podrobných 
+                        informací jako popisy, počet epizod, země původu apod. 
+                        Uživatelé mohou s aplikací interagovat přidáváním komentářů 
+                        a ukládáním filmů do oblíbených. <br> <br>
+                        Technologie: 
                         <img src="images/Kotlin.png" alt="kotlin-picture">Kotlin,
                         Jetpack Compose, REST
                     </p>
                     <div class="btn">
                         <a href="projects/movie_library.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -247,22 +247,21 @@
 
                 <div class="project">
                     <h3>
-                        Caterpillar Game
+                        Hra hadi
                         <img src="images/caterpillar.png" alt="caterpillar-picture">
                     </h3>
                     <p>
-                        Developed a classic Snake game where the player controls a growing snake that moves around 
-                        the game area, consuming food while avoiding collisions with the walls and itself. 
-                        Each time the snake eats food, it increases in length, making navigation progressively 
-                        more challenging. <br> <br>
-                        Technologies:
+                        Vývoj klasické hry Hadi, kde hráč ovládá rostoucího hada pohybujícího se po herní ploše, 
+                        který sbírá potravu a vyhýbá se kolizím se zdmi a vlastním tělem. 
+                        S každým snězeným kouskem jídla se had prodlužuje. <br> <br>
+                        Technologie:
                         <img src="images/C.png" alt="c-picture">
                         <img src="images/C++.png" alt="cplusplus-picture">
                     </p>
                     <div class="btn">
                         <a href="projects/caterpillar_game.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -270,16 +269,15 @@
 
                 <div class="project">
                     <h3>
-                        School Information System
+                        Školní informační systém
                         <img src="images/systems.png" alt="information-system-picture">
                     </h3>
                     <p>
-                        Developed an application serving as a school information system focused on managing and promoting 
-                        voluntary events such as meetups, barbecues, competitions, excursions, and lectures related 
-                        to the field of study. The system enables students to explore various activities and participate 
-                        in those that interest them, providing essential information and interactive features to simplify 
-                        registration and track attendance. <br> <br>
-                        Technologies:
+                        Vývoj aplikace sloužící jako školní informační systém pro správu a propagaci 
+                        dobrovolných akcí jako setkání, grilování, soutěže, exkurze nebo přednášky 
+                        související s oborem studia. Systém umožňuje studentům procházet různé aktivity 
+                        a zapojit se do těch, které je zajímají. <br> <br>
+                        Technologie:
                         <i class="fa-brands fa-java"></i> Java,
                         <img src="images/Spring.png" alt="spring-picture">Spring,
                         REST,
@@ -288,7 +286,7 @@
                     <div class="btn">
                         <a href="projects/school_is.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -296,21 +294,21 @@
 
                 <div class="project">
                     <h3>
-                        Food Chain
+                        Sledování potravinového řetězce - Food Chain
                         <img src="images/food-chain.png" alt="food-chain-picture">
                     </h3>
                     <p>
-                        Developed a system for tracking the flow of food products using a simplified implementation of blockchain technology. 
-                        The system ensures full traceability of food as it moves through various stages, from production to final sale to customers. 
-                        This process includes key phases such as processing, storage, distribution, and other essential operations, enhancing 
-                        transparency and accountability in the supply chain. <br> <br>
-                        Technologies:
+                        Vývoj systému pro sledování toku potravinových produktů pomocí zjednodušené 
+                        implementace blockchainu. 
+                        Systém zajišťuje plnou trasovatelnost potravin přes různé fáze od výroby až 
+                        po finální prodej zákazníkům. <br> <br>
+                        Technologie:
                         <i class="fa-brands fa-java"></i> Java
                     </p>
                     <div class="btn">
                         <a href="projects/food_chain.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -318,20 +316,20 @@
 
                 <div class="project">
                     <h3>
-                        Vehicular - World-leading vehicle CRS software
+                        Vehicular - Systém pro správu půjčoven vozidel
                         <img src="images/car.png" alt="car-picture">
                     </h3>
                     <p>
-                        CarRS is a Computer Reservation Software for managing and operating vehicle rental companies around the world. 
-                        It handles information about branches, vehicle fleets and their availability in region. Thus the system serves the customers, 
-                        employees and managers - everything is in one place. <br> <br>
-                        Technologies:
+                        CarRS je softwarový systém pro správu a provoz půjčoven vozidel po celém světě. 
+                        Systém spravuje informace o pobočkách, vozových flotilách a jejich dostupnosti
+                        v regionu. <br> <br>
+                        Technologie:
                         <i class="fa-brands fa-java"></i> Java
                     </p>
                     <div class="btn">
                         <a href="projects/vehicular_system.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -339,21 +337,21 @@
 
                 <div class="project">
                     <h3>
-                        Hotel Database
+                        Databáze hotelů
                         <img src="images/hotel.png" alt="hotel-picture">
                     </h3>
                     <p>
-                        Developed an information system for managing hotels and hotel chains, allowing administrators to track key details 
-                        such as location, contact information, and official rating. The system enables efficient management of hotel data, 
-                        including adding new hotels to the chain and updating existing records. <br> <br>
-                        Technologies:
+                        Vývoj informačního systému pro správu hotelů a hotelových řetězců, který 
+                        správcům umožňuje sledovat 
+                        klíčové údaje jako lokalitu, kontaktní informace a oficiální hodnocení. <br> <br>
+                        Technologie:
                         <img src="images/PostgresSQL.png" alt="postgresql-picture"> PostgreSQL,
                         <i class="fa-brands fa-java"></i> Java
                     </p>
                     <div class="btn">
                         <a href="projects/hotel_management.html">
                             <i class="fa-solid fa-info"></i>
-                            Details
+                            Detaily
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -382,28 +380,27 @@
         <div class="rectangle-education-work">
 
             <div class="about-education">
-                <h3>Education</h3>
+                <h3>Vzdělání</h3>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="date">2023 <br> - <br> ongoing</div>
+                        <div class="date">2023 <br> - <br> současnost</div>
                         <div class="info">
-                            <h4>Czech Technical University in Prague</h4>
+                            <h4>České vysoké učení technické v Praze</h4>
                             <p>
-                                Faculty: Faculty of Electrical Engineering <br>
-                                Study Programme: Software Engineering and Technology <br>
-                                Programme Type: bachelor <br>
-                                Specialization: Enterprise systémy <br>
+                                Fakulta: Fakulta elektrotechnická <br>
+                                Studijní program: Softwarové inženýrství a technologie <br>
+                                Typ studia: bakalářské <br>
+                                Specializace: Enterprise systémy <br>
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="date">2019 <br> - <br> 2023</div>
                         <div class="info">
-                            <h4>Secondary Hotel School Vršovická</h4>
+                            <h4>Střední Hotelová Škola Vršovická</h4>
                             <p>
-                                Study Programme: Hotel Management <br>
-                                Four-year full-time study program ending with a 
-                                school-leaving examination
+                                Studijní program: Hotelnictví <br>
+                                Čtyřleté studium zakončené maturitní zkouškou
                             </p>
                         </div>
                     </div>
@@ -411,17 +408,17 @@
             </div>
 
             <div class="about-education">
-                <h3>Work Experience</h3>
+                <h3>Pracovní zkušenosti</h3>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="date">July 2022 <br> - <br> January 2023</div>
+                        <div class="date">Červenec 2022 <br> - <br> Leden 2023</div>
                         <div class="info">
                             <h4>Hotel Seven Days Prague</h4>
-                            <p>Waitress</p>
+                            <p>Číšnice</p>
                             <ul>
-                                <li>Served customers during breakfast hours.</li>
-                                <li>Prepared and served breakfast meals and beverages.</li>
-                                <li>Ensured fast and efficient service in the morning hours.</li>
+                                <li>Obsluha zákazníků během snídaní.</li>
+                                <li>Příprava a servírování snídaňových jídel a nápojů.</li>
+                                <li>Zajištění rychlé a efektivní obsluhy v ranních hodinách.</li>
                             </ul>
                         </div>
                     </div>
@@ -429,13 +426,13 @@
             </div>
 
             <div class="about-education">
-                <h3>Internships</h3>
+                <h3>Stáže</h3>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="date">2021</div>
                         <div class="info">
                             <h4>Stages Hotel Prague</h4>
-                            <p>Waitress</p>
+                            <p>Číšnice</p>
                             <ul>
                                 <li>Served customers during events and regular operations.</li>
                                 <li>Responsible for preparing and serving food and beverages.</li>
@@ -447,11 +444,12 @@
                         <div class="date">2021</div>
                         <div class="info">
                             <h4>O2 Arena</h4>
-                            <p>Waitress</p>
+                            <p>Číšnice</p>
                             <ul>
-                                <li>Served customers during events and concerts.</li>
-                                <li>Responsible for preparing and serving food and beverages.</li>
-                                <li>Provided fast and efficient service during high visitor volumes.</li>
+                                <li>Obsluha zákazníků během akcí a běžného provozu.</li>
+                                <li>Zodpovědnost za přípravu a servírování nápojů a jídel.</li>
+                                <li>Komunikace s návštěvníky a zajištění vysoké úrovně zákaznického
+                                    servisu.</li>
                             </ul>
                         </div>
                     </div>
@@ -474,33 +472,33 @@
 
         <div class="rectangle-skills">
             <div class="skills">
-                <div class="title">Skills</div>
+                <div class="title">Dovednosti</div>
                 <div class="skills-info">
                     <div class="info">
-                        <h3>Programming languages:</h3>
+                        <h3>Programovací jazyky:</h3>
                         <p>Java, Kotlin, C, C++, Python</p>
                     </div>
                     <div class="info">
-                        <h3>Web technologies:</h3>
+                        <h3>Webové technologie:</h3>
                         <p>HTML, CSS, JavaScript, PHP</p>
                     </div>
                     <div class="info">
-                        <h3>Databases:</h3>
+                        <h3>Databáze:</h3>
                         <p>PostgreSQL, pgAdmin</p>
                     </div>
                     <div class="info">
-                        <h3>Development Tools:</h3>
+                        <h3>Vývojové nástroje:</h3>
                         <p>Git, Visual Studio Code, Intellij IDEA,
                             Android Studio, Enterprise Architect,
                             Postman, Cisco Packet Tracer
                         </p>
                     </div>
                     <div class="info">
-                        <h3>Microsoft Office Applications:</h3>
+                        <h3>Microsoft Office:</h3>
                         <p>Word, Excel, PowerPoint</p>
                     </div>
                     <div class="info">
-                        <h3>Design Tools:</h3>
+                        <h3>Designové nástroje:</h3>
                         <p>GIMP, Zoner Callisto 5</p>
                     </div>
                 </div>
@@ -509,14 +507,14 @@
 
         <div class="rectangle-skills">
             <div class="certifications">
-                <div class="title">Certifications</div>
+                <div class="title">Certifikáty</div>
                 <div class="certifications-info">
-                    <h3>Summer IT School</h3>
+                    <h3>Letní IT škola</h3>
                     <p>
-                        Organization: Czechitas <br>
-                        Period: July 2022 <br>
-                        Description: Completed a course focused on creating simple websites,
-                        vector graphic design, and basic programming.
+                        Organizace: Czechitas <br>
+                        Období: Červenec 2022 <br>
+                        Popis: Absolvování kurzu zaměřeného na tvorbu jednoduchých 
+                        webových stránek, vektorovou grafiku a základy programování.
                     </p>
                 </div>
             </div>
@@ -535,8 +533,8 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section">
         <div class="rectangle-contact">
-            <h3>Contact</h3>
-            <p>Feel free to reach out to me via social media or email.</p>
+            <h3>Kontakt</h3>
+            <p>Neváhejte mě kontaktovat prostřednictvím sociálních sítí nebo e-mailu.</p>
             <div class="contact-icons">
                 <a href="https://www.instagram.com/minmin_tranova_army/" target="_blank" class="icon">
                     <i class="fa-brands fa-instagram"></i>
