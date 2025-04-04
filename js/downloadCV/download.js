@@ -4,7 +4,7 @@ download.addEventListener("click", (e) => {
     e.preventDefault();
     const downloadBtn = this;
     const originalHTML = downloadBtn.innerHTML;
-    const pdfURL = "/docs/Minh_Thu_Tranova_CV.pdf";
+    const pdfURL = "/docs/Minh_Thu_Tranova_cv.pdf";
     const fileName = "MinMin_Tranova_CV.pdf";
 
     fetch(pdfURL)
