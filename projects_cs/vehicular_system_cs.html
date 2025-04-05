@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systém pro rezervaci vozidel</title>
+    <link rel="stylesheet" href="../css/projects/project_styles.css">
+    <link rel="stylesheet" href="../css/components/scrollbar.css">
+    <link rel="stylesheet" href="../css/ui_for_mobile/ui.css">
+</head>
+<body>
+    
+    <div class="button-section">
+        <a href="../index.html">
+            <img id="button-home" src="../images/home.png" alt="home-picture">
+        </a>
+    </div>
+
+    <section class="main-section">
+
+        <h1>SYSTÉM PRO REZERVACI VOZIDEL</h1>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/pen.png" alt="pen-picture">
+                Popis:
+            </h2>
+            <p>
+                CarRS je špičkový systém pro rezervaci vozidel (CRS) určený pro správu
+                a provoz půjčoven vozidel po celém světě. Systém centralizuje informace
+                o pobočkách a jejich dostupnosti, sloužící zákazníkům,
+                zaměstnancům a manažerům v jedné integrované platformě.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/star.png" alt="star-picture">
+                Funkční požadavky:
+            </h2>
+            <ul>
+                <li>Správa poboček:</li>
+                <li class="info">
+                    Systém udržuje záznamy o všech pobočkách společnosti.
+                    Každá pobočka zahrnuje manažera, tým zaměstnanců
+                    a flotilu vozidel.
+                </li>
+                <li>Serializovatelné záznamy:</li>
+                <li class="info">
+                    Všechny záznamy (pobočky, zaměstnanci, vozidla) jsou
+                    serializovatelné, což umožňuje jejich ukládání a načítání ze souborů.
+                </li>
+                <li>Logování a audit:</li>
+                <li class="info">
+                    Všechny manipulace se záznamy jsou logovány, včetně informací
+                    o tom, kdo změny provedl a co bylo upraveno. Smazání záznamů
+                    je označeno jako vyšší závažnost ve srovnání s ostatními operacemi.
+                </li>
+                <li>Oprávnění zaměstnanců:</li>
+                <li class="info">
+                    Zaměstnanci mohou prohlížet rozvrh a stav každého vozidla.
+                    Zaměstnanci mohou označit vozidla jako nedostupná k pronájmu (např. z důvodu
+                    technických problémů).
+                </li>
+                <li>Oprávnění manažerů:</li>
+                <li class="info">
+                    Manažeři mají všechna oprávnění zaměstnanců a navíc mohou
+                    přidávat/odebírat zaměstnance a vozidla, stejně jako upravovat jejich vlastnosti.
+                </li>
+                <li>Funkce pro zákazníky:</li>
+                <li class="info">
+                    Zákazníci mohou procházet všechny pobočky společnosti a zobrazovat dostupná vozidla.
+                    Zákazníci mohou rezervovat konkrétní vozidlo na období 1-30 celých dnů.
+                </li>
+                <li>Výpočet ceny pronájmu vozidla:</li>
+                <li class="info">
+                    Denní cena pronájmu pro každé vozidlo se vypočítává na základě:
+                    ceny paliva (závislé na regionu),
+                    čtvrtiny kapacity nádrže,
+                    předem stanovené marže podle typu vozidla.
+                </li>
+                <li>Období odstávky vozidla:</li>
+                <li class="info">
+                    Po každém pronájmu vstupuje vozidlo do třídenního období odstávky, během kterého
+                    nemůže být pronajato (např. pro čištění, kontrolu atd.).
+                </li>
+                <li>Pronájem příslušenství:</li>
+                <li class="info">
+                    Zákazníci si mohou pronajmout příslušenství (např. karavan, ruční vozík, záchrannou
+                    vestu) za pevnou denní cenu, která zahrnuje marži společnosti.
+                </li>
+            </ul>
+        </div>
+
+        <div class="eshop-info">
+            <h2>Technologie:</h2>
+            <ul>
+                <li>Java:</li>
+                <li class="info">
+                    Použito pro vývoj systému.
+                </li>
+                <li>Vývojové nástroje:</li>
+                <li class="info">
+                    IntelliJ IDEA
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<script src="../js/ui/button-home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Herní Engine</title>
+    <link rel="stylesheet" href="../css/projects/project_styles.css">
+    <link rel="stylesheet" href="../css/components/scrollbar.css">
+    <link rel="stylesheet" href="../css/ui_for_mobile/ui.css">
+</head>
+<body>
+
+    <div class="button-section">
+        <a href="../index.html">
+            <img id="button-home" src="../images/home.png" alt="home-picture">
+        </a>
+    </div>
+
+    <section class="main-section">
+
+        <h1>2D HERNÍ ENGINE</h1>
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/target.png" alt="target-picture">
+                Cíl hry:
+            </h2>
+            <p>
+                Hráč má za úkol ovládat postavu a projít jednotlivé levely, sbírat suroviny a 
+                překonávat překážky. Cílem je shromáždit určitou kombinaci surovin a vytvořit 
+                speciální předmět, který se používá k boji nebo k obnovení životnost, a najít 
+                klíč do vyššího levelu. 
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/game-elements.png" alt="game-elements-picture">
+                Herní prvky:
+            </h2>
+            <h3>Herní plocha:</h3>
+            <ul>
+                <li>Velikost:</li>
+                <li class="info">Herní pole je čtvercové o velikosti 10 x 10 polí. </li>
+            </ul>
+            <h3>Neživé překážky:</h3>
+            <ul>
+                <li>Zeď:</li>
+                <li class="info">Zabraňuje pohybu hráče.</li>
+                <li>Voda:</li>
+                <li class="info">Hráč nemůže procházet přes vodní plochy
+                    a musí najít cestu kolem nich.</li>
+                <li>Oheň:</li>
+                <li class="info">Ohnivá pole jsou pro hráče nebezpečná.
+                    Vstoupení do ohně sníží zdraví.
+                    Oheň lze uhasit vodou.</li>
+            </ul>
+            <h3>Živé překážky:</h3>
+            <ul>
+                <li>Duch:</li>
+                <li class="info">Pohybuje se po herním poli a ohrožuje hráče.</li>
+            </ul>
+            <h3>Předměty:</h3>
+            <ul>
+                <li>Kovová ruda:</li>
+                <li class="info">Surovina pro vytvoření meče.</li>
+                <li>Voda:</li>
+                <li class="info">omocí vody uhasí oheň v cestě nebo se používá pro vytváření lektvaru.</li>
+                <li>Bylinka:</li>
+                <li class="info">Surovina pro vytvoření lektvaru.</li>
+                <li>Meč:</li>
+                <li class="info">
+                    Používá se k boji s duchem. Může hráče zachránit jednou, pokud se 
+                    hráč dotkne ducha, ale nemůže ducha zabít. Pro vytvoření meče hráč 
+                    potřebuje 3 kovové rudy. 
+                </li>
+                <li>Lektvar: </li>
+                <li class="info">
+                    Hráč může najít lektvar během hry, který obnoví 1 životnost. Pro 
+                    vytvoření lektvaru hráč potřebuje vodu a bylinku. 
+                </li>
+                <li>Klíč:</li>
+                <li class="info">Otevírá uzamčené dveře do vyššího levelu.</li>
+            </ul>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/inventory.png" alt="inventory-picture">
+                Invetář:
+            </h2>
+            <p>
+                Hráč otevře inventář stisknutím klávesy I (zkratka pro inventář).
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/handcraft.png" alt="crafting-picture">
+                Výroba:
+            </h2>
+            <p>
+                Vytváření nových předmětů probíhá v inventáři hráče. 
+                Po sebrání všech potřebných surovin hráč otevře inventář. 
+                V inventáři vybere možnost "+", aby mohl začít proces výroby. 
+                Hráč vybere recept (třeba na meč), je vizualizován prostřednictvím ikony. 
+                Hráč přetáhne potřebné suroviny do určených slotů v receptu. 
+                Po umístění všech surovin potřebných pro recept hráč potvrdí a zahájí proces výroby. 
+                Po dokončení výroby se předmět objeví v inventáři hráče. 
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/controls.png" alt="controls-picture">
+                Ovládání:
+            </h2>
+            <p>
+                Pohyb: Klávesy WASD pro pohyb nahoru, doleva, dolů a doprava. <br>
+                Interakce s předměty: Předměty se sbírají automaticky při kontaktu s postavou.  
+                Pro další interakci s předměty a prostředím hráč otevírá inventář a vybere 
+                předmět kliknutím na něj, a každý předmět se dá používat jen jednou.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/saving.png" alt="saving-picture">
+                Ukládání a načítání hry:
+            </h2>
+            <p>
+                Ukládání: automatické ukládání na konci každého levelu. <br>
+                Načítání: poslední uložené pozice hráče při spuštění hry.    
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/technologies.png" alt="technologies-picture">
+                Technologie:
+            </h2>
+            <ul>
+                <li>Java:</li>
+                <li class="info">
+                    Hra je kompletně implementována v Javě, včetně všech základních mechanik
+                    a logiky. Pro strukturování kódu a správu herních entit jsou použity
+                    principy objektově orientovaného programování.
+                </li>
+                <li>JavaFx:</li>
+                <li class="info">
+                    Uživatelské rozhraní je vyvinuto pomocí JavaFX. Stará se o vykreslování,
+                    uživatelské interakce a vizuální komponenty jako tlačítka, správu inventáře
+                    a ovládání pohybu.
+                </li> 
+                <li>JSON file:</li>
+                <li class="info">
+                    Stav hry je uložen v JSON souborech, které obsahují všechna relevantní data,
+                    včetně pozic všech herních prvků a předmětů v hráčově inventáři.
+                </li>
+                <li>Vývojové nástroje:</li>
+                <li class="info">Intellij IDEA, GIMP</li>
+            </ul>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/video.png" alt="vide-picture">
+                Video:
+            </h2>
+            <div class="video-container">
+                <video class="video" id="video" controls>
+                    <source src="../videos/EscapeGame.mp4">
+                    <source src="../videos/EscapeGame.webm">
+                    Váš prohlížeč nepodporuje video tag.
+                </video>
+            </div>
+            <div class="video-modification">
+                <button id="play-pause-button">
+                    Přehrát/Pozastavit
+                </button>
+                <button id="big-button">
+                    Velké
+                </button>
+                <button id="small-button">
+                    Malé
+                </button>
+                <button id="normal-button">
+                    Normální
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+<script src="../js/ui/button-home.js"></script>
+<script src="../js/ui/video.js"></script>
+
+</body>
+</html>

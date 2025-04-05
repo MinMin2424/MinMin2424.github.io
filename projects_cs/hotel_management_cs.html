@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa hotelů</title>
+    <link rel="stylesheet" href="../css/projects/project_styles.css">
+    <link rel="stylesheet" href="../css/components/scrollbar.css">
+    <link rel="stylesheet" href="../css/ui_for_mobile/ui.css">
+</head>
+<body>
+
+    <div class="button-section">
+        <a href="../index.html">
+            <img id="button-home" src="../images/home.png" alt="home-picture">
+        </a>
+    </div>
+
+    <section class="main-section">
+
+        <h1>SPRÁVA HOTELŮ</h1>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/pen.png" alt="pen-picture">
+                Popis:
+            </h2>
+            <p>
+                Vyvinut informační systém pro správu hotelů a hotelových řetězců,
+                který umožňuje administrátorům sledovat klíčové údaje jako lokalitu,
+                kontaktní informace a oficiální hodnocení. Systém usnadňuje efektivní
+                správu hotelových dat, včetně přidávání nových hotelů do řetězce
+                a aktualizace stávajících záznamů.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/data-processing.png" alt="process-picture">
+                Proces vývoje projektu:
+            </h2>
+            <ul>
+                <li>Návrh a správa databáze:</li>
+                <li class="info">
+                    Projekt začal vytvořením a správou databáze v PostgreSQL pomocí pgAdmin. <br>
+                    Tabulky byly navrženy se specifickými parametry pro ukládání
+                    hotelových dat (např. název hotelu, lokalita, kontaktní údaje, hodnocení). <br>
+                    Data byla vložena do příslušných tabulek a byly napsány dotazy
+                    pro získání nebo spojení dat z více tabulek do jednoho výsledku.
+                </li>
+                <li>Implementace v Javě:</li>
+                <li class="info">
+                    Po dokončení databázové struktury byl systém implementován v Javě
+                    pro poskytnutí uživatelsky přívětivého rozhraní a další funkcionality. <br>
+                    Mezi klíčové implementované funkce patří CRUD operace (Create, Read, Update, Delete)
+                    pro správu hotelových záznamů. <br>
+                    Byla přidána vyhledávací funkce pro nalezení hotelů podle názvu, ID nebo jiných kritérií.
+                </li>
+            </ul>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/technologies.png" alt="technologies-picture">
+                Technologie:
+            </h2>
+            <ul>
+                <li>PostgreSQL:</li>
+                <li class="info">
+                    Hlavní technologie použita pro návrh databáze, správu a provádění dotazů.
+                </li>
+                <li>Java:</li>
+                <li class="info">
+                    Vedlejší technologie použita pro implementaci aplikační logiky a uživatelského rozhraní.
+                </li>
+                <li>Vývojové nástroje:</li>
+                <li class="info">
+                    IntelliJ IDEA, pgAdmin
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+<script src="../js/ui/button-home.js"></script>
+
+</body>
+</html>

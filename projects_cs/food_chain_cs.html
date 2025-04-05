@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Chain</title>
+    <link rel="stylesheet" href="../css/projects/project_styles.css">
+    <link rel="stylesheet" href="../css/components/scrollbar.css">
+    <link rel="stylesheet" href="../css/ui_for_mobile/ui.css">
+</head>
+<body>
+
+    <div class="button-section">
+        <a href="../index.html">
+            <img id="button-home" src="../images/home.png" alt="home-picture">
+        </a>
+    </div>
+
+    <section class="main-section">
+
+        <h1>FOOD CHAIN</h1>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/pen.png" alt="pen-picture">
+                Popis:
+            </h2>
+            <p>
+                Projekt "Food Chain" se zaměřuje na implementaci systému pro sledování 
+                toku potravin pomocí zjednodušené implementace blockchain technologie. 
+                Systém zajišťuje, že lze sledovat, jak potraviny procházejí různými 
+                fázemi procesu, od jejich vypěstování až po jejich prodej zákazníkovi. 
+                Tento proces zahrnuje všechny fáze, včetně zpracování, skladování, 
+                distribuce a dalších operací.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/group-users.png" alt="group-users-picture">
+                Klíčové entity v systému
+            </h2>
+            <div>
+                <p>Hlavními entitami v systému jsou:</p>
+                <ul>
+                    <li>Farmář:</li>
+                    <li class="info">
+                        Může skladovat, vytvářet, zpracovávat a odebírat produkty ze
+                        skladu, ale nemůže vracet, nakupovat ani distribuovat produkty.
+                    </li>
+                    <li>Zpracovatel:</li>
+                    <li class="info">
+                        Může provádět všechny operace kromě distribuce.
+                    </li>
+                    <li>Sklad:</li>
+                    <li class="info">
+                        Spravuje skladové operace.
+                    </li>
+                    <li>Distributor:</li>
+                    <li class="info">
+                        Zajišťuje distribuci produktů.
+                    </li>
+                    <li>Majitel obchodu:</li>
+                    <li class="info">
+                        Může provádět všechny operace kromě distribuce.
+                    </li>
+                    <li>Zákazník:</li>
+                    <li class="info">
+                        Může pouze nakupovat nebo vracet produkty.
+                    </li>
+                </ul>
+            </div>
+            <p>
+                Každá entita provádí specifické operace týkající se potravinových produktů,
+                s omezeními podle své role v dodavatelském řetězci.
+            </p>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/star.png" alt="star-picture">
+                Funkce systému:
+            </h2>
+            <ul>
+                <li>Sledování transakcí:</li>
+                <li class="info">
+                    Sleduje všechny operace prováděné s potravinovými produkty, jako je
+                    vytvoření, skladování, zpracování, distribuce a prodej.
+                </li>
+                <li>Detekce problémů:</li>
+                <li class="info">
+                    Detekuje potenciální problémy jako dvojí utrácení
+                    (např. stejný potravinový produkt prodán vícekrát). <br>
+                    Zabrání pokusům o změnu nebo vrácení dokončených transakcí.
+                </li>
+                <li>Reportování:</li>
+                <li class="info">
+                    <ol>
+                        <li class="reports">Parties Report: </li>
+                        <li class="info-item">
+                            Podrobně popisuje, jak dlouho a kým byl produkt skladován nebo držen.
+                        </li>
+                        <li class="reports">Food Chain Report: </li>
+                        <li class="info-item">
+                            Popisuje, co se s produktem stalo (např. vytvořen,
+                            skladován, zpracován) a kdo tyto operace provedl.
+                        <li class="reports">Security Report: </li>
+                        <li class="info-item">
+                            Zaměřuje se na detekci dvojího utrácení a pokusů
+                            o změnu minulých transakcí.
+                        </li>
+                        <li class="reports">Money Report: </li>
+                        <li class="info-item">
+                            Uvádí všechny transakce související s nákupy produktů,
+                            včetně cen produktů a finančního stavu každé strany před a po transakci.
+                        </li>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <div class="eshop-info">
+            <h2>
+                <img src="../images/technologies.png" alt="technologies-picture">
+                Technologie:
+            </h2>
+            <ul>
+                <li>Java:</li>
+                <li class="info">
+                    Použito pro implementaci systému.
+                </li>
+                <li>Vývojové nástroje:</li>
+                <li class="info">
+                    IntelliJ IDEA
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+<script src="../js/ui/button-home.js"></script>
+
+</body>
+</html>
