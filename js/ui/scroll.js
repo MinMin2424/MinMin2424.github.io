@@ -1,25 +1,29 @@
-document.querySelectorAll(".link").forEach( link => {
-
-    link.addEventListener("click", (e) => {
-
+$(document).ready(function() {
+    $('.link').click(function(e) {
         e.preventDefault();
-        const targetId = e.currentTarget.getAttribute("href");
-        const targetSection = document.querySelector(targetId);
-
-        if (targetSection) {
-
-            // const navHeight = 80;
-            // window.scrollTo({
-            //     behavior: "smooth",
-            //     top: targetSection.offsetTop - navHeight
-            // });
-
-            targetSection.scrollIntoView({
-                behavior: "smooth"
-            })
-            
+        const $targetId = $(this).attr('href');
+        const $targetSection = $($targetId)
+        
+        if ($targetSection.length) {
+            $('html, body').animate({
+                scrollTop: $targetSection.offset().top - 80
+            }, 800)
         }
-
     });
+});
 
-})
+// document.querySelectorAll(".link").forEach( link => {
+    
+//     link.addEventListener("click", (e) => {
+//         e.preventDefault();
+//         const targetId = e.currentTarget.getAttribute("href");
+//         const targetSection = document.querySelector(targetId);
+
+//         if (targetSection) {
+//             targetSection.scrollIntoView({
+//                 behavior: "smooth"
+//             })
+//         }
+//     });
+
+// })
