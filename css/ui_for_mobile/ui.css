@@ -1,12 +1,16 @@
 /* MAIN PAGE */
 @media screen and (max-width: 450px) {
+    body {
+        background: radial-gradient(
+        circle at 30% 50%, #92ffc0 0%, #002661 100%
+        ) fixed ;
+    }
     .side-nav {
         display: none;
     }
     .dot-separator {
         margin-left: 0px !important;
     }
-
     .home-section,
     .about-section,
     .portfolio-section,

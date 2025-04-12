@@ -40,6 +40,11 @@
     height: 35px;
 }
 
+#edit-btn {
+    margin-top: 30%;
+    width: 100%;
+}
+
 .profile-picture {
     width: 250px;
     height: 250px;

@@ -90,6 +90,13 @@
     font-size: 1em;
 }
 
+.btn #info-detail {
+    width: 15%;
+    height: 15%;
+    padding-bottom: 2%;
+    margin-left: -10px;
+}
+
 .nav-button {
     color: lavender;
     border: solid 5px lavender;
@@ -107,4 +114,12 @@
 
 .prev-button, .next-button {
     background-color: transparent;
+}
+
+.nav-button #arrow-left {
+    width: 100%;
+}
+
+.nav-button #arrow-right {
+    width: 100%;
 }

@@ -36,14 +36,19 @@
 .contact-icons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .contact-icons .icon {
     text-decoration: none;
     color: lavender;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.contact-icons .icon:hover {
-    animation: glow 0.4s ease-in-out forwards;
+.contact-icons .contact-pictures {
+    width: 30px;
+    margin-bottom: 10px;
 }
