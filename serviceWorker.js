@@ -42,6 +42,7 @@ const listOfUrlsToCache = [
     '/js/downloadCV/download.js',
     '/js/homeSectionManager/edit-home-section.js',
     '/js/homeSectionManager/manager.js',
+    'js/offlineStatus/registerSW.js',
     '/js/ui/background.js',
     '/js/ui/button-home.js',
     '/js/ui/dots.js',
@@ -57,7 +58,7 @@ const listOfUrlsToCache = [
     '/docs/Minh_Thu_Tranova_cv.pdf',
 
     /* EXTERN RESOURCES */
-    'https://kit.fontawesome.com/72da5dddc6.js',
+    // 'https://kit.fontawesome.com/72da5dddc6.js',
     'https://code.jquery.com/jquery-3.7.1.min.js',
 
     /* IMAGES */
@@ -104,8 +105,8 @@ const listOfUrlsToCache = [
     '/images/arrow-right.png',
 
     // /* VIDEOS */
-    '/video/EscapeGame.mp4',
-    '/videos/EscapeGame.webm'
+    // '/video/EscapeGame.mp4',
+    // '/videos/EscapeGame.webm'
 ];
 
 self.addEventListener('install', (e) => {
