@@ -1,3 +1,13 @@
+/**
+ * Smooth Scrolling Navigation
+ * 
+ * Handles animated scrolling to page sections when clicking navigation links.
+ * Features:
+ * - Prevents default anchor jump behaviour
+ * - Calculates target position with offset
+ * - Animated scroll with easing
+ * - Existence checking for target elements
+ */
 $(document).ready(function() {
     $('.link').click(function(e) {
         e.preventDefault();

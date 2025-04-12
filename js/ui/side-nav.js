@@ -1,3 +1,8 @@
+/**
+ * Responsive Navigation Menu
+ * 
+ * Handles the interactive behaviour of the hamburger menu.
+ */
 $(document).ready(function() {
     const $burgerMenu = $('#burger-menu');
     const $sideNav = $('.side-nav');

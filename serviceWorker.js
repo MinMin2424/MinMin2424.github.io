@@ -1,5 +1,13 @@
+/**
+ * Service Worker Configuration
+ * 
+ * Implements offline-first strategy with cache management.
+ */
 const CACHE_NAME = 'my-cache-v1';
 
+/** 
+ * List of assets to cache during installation 
+ */
 const listOfUrlsToCache = [
     '/',
 
@@ -109,6 +117,10 @@ const listOfUrlsToCache = [
     // '/videos/EscapeGame.webm'
 ];
 
+/**
+ * Install Event
+ * Caches all specified assets during service worker installation.
+ */
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open(CACHE_NAME)
@@ -117,6 +129,10 @@ self.addEventListener('install', (e) => {
     )
 });
 
+/**
+ * Fetch Event
+ * Implements cache-first strategy with network fallback
+ */
 self.addEventListener('fetch', (e) => {
     e.respondWith(
         caches.match(e.request)
@@ -141,6 +157,10 @@ self.addEventListener('fetch', (e) => {
     );
 });
 
+/**
+ * Activate Event
+ * Cleans up old cache versions.
+ */
 self.addEventListener('active', (e) => {
     const cacheList = [CACHE_NAME];
     e.waitUntil(

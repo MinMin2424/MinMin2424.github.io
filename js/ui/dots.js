@@ -1,3 +1,9 @@
+/**
+ * Dynamic Dot Separator Generator
+ * 
+ * Creates a series of SVG dots with consistent styling.
+ * Used as visual separators between content sections.
+ */
 $(document).ready(function() {
     const $dotContainer = $('.dot-separator');
     const $dotCount = 5;

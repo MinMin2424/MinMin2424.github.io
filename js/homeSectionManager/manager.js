@@ -1,5 +1,13 @@
+/**
+ * Manages the home section editing functionality.
+ * Handles loading, editing, and saving home section content.
+ */
 class HomeSectionManager {
 
+    /**
+     * Initialize HomeSectionManager with DOM elements and JSON path.
+     * Sets up event listeners and loads initial data.
+     */
     constructor() {
         this.editButton = document.getElementById("edit-button-home");
         this.cancelButton = document.getElementById("cancel-edit-button");
@@ -11,12 +19,19 @@ class HomeSectionManager {
         this.loadData();
     }
 
+    /**
+     * Set up all event listeners for the home section.
+     */
     initEventListeners() {
         this.editButton.addEventListener("click", () => this.openEditForm());
         this.cancelButton.addEventListener("click", () => this.closeEditForm());
         this.editFormSection.addEventListener("submit", (e) => this.handleFormSubmit(e));
     }
 
+    /**
+     * Load home section data from localStorage or JSON file.
+     * @returns
+     */
     async loadData() {
         try {
             const savedData = localStorage.getItem("homeData");
@@ -32,52 +47,72 @@ class HomeSectionManager {
         }
     }
 
+    /**
+     * Open the edit form and fill with current values.
+     */
     openEditForm() {
         document.getElementById("edit-title").value = document.getElementById("home-title").textContent;
         document.getElementById("edit-description").value = document.getElementById("home-description").textContent;
-        // document.getElementById("edit-image").value = document.getElementById("home-picture").src;
 
         this.editFormSection.style.display = "flex";
         this.homeSection.style.display = "none";
     }
 
+    /**
+     * Close the edit form and return to view mode.
+     */
     closeEditForm() {
         this.clearErrors();
         this.editFormSection.style.display = "none";
         this.homeSection.style.display = "flex";
     }
 
+    /**
+     * Handle form submission.
+     * @param {Event} e - The submit event.
+     */
     handleFormSubmit(e) {
         e.preventDefault();
 
         const data = {
             title: document.getElementById("edit-title").value.trim(),
             description: document.getElementById("edit-description").value.trim(),
-            // image: document.getElementById("edit-image").value.trim()
         }
 
         if (this.validateData(data)) {
-            this.updateData(data.title, data.description/*, data.image*/);
+            this.updateData(data.title, data.description);
         }
     }
 
-    updateData(title, description /*, image */) {
+    /**
+     * Update home section data.
+     * @param {*} title - New title text.
+     * @param {*} description - New description text.
+     */
+    updateData(title, description) {
         const updatedData = {
             title: title,
             description: description,
-            // image: image
         };
         localStorage.setItem("homeData", JSON.stringify(updatedData));
         this.updateUI(updatedData)
         this.closeEditForm();
     }
 
+    /**
+     * Update the UI with new data.
+     * @param {Object} updatedData  - Contains title and description properties.
+     */
     updateUI(updatedData) {
         document.getElementById("home-title").textContent = updatedData.title;
         document.getElementById("home-description").textContent = updatedData.description;
-        // document.getElementById("home-picture").src = `../../${updatedData.image}`;
     }
 
+    /**
+     * Validate form data before saving.
+     * @param {Object} updateData  - Data to validate.
+     * @returns {boolean} True if data is valid.
+     */
     validateData(updateData) {
         let isValid = true;
         if (!updateData.title) {
@@ -88,13 +123,14 @@ class HomeSectionManager {
             this.showError("Description cannot be empty", "edit-description")
             isValid = false;
         }
-        // if (!updateData.image) {
-        //     this.showError("Image URL cannot be empty", "edit-image");
-        //     isValid = false;
-        // }
         return isValid;
     }
 
+    /**
+     * Display an error message for a form field.
+     * @param {string} message - Error message to display.
+     * @param {string} fieldId - ID of the related form field.
+     */
     showError(message, fieldId) {
         const field = document.getElementById(fieldId);
         const errorDiv = document.createElement("div");
@@ -110,6 +146,10 @@ class HomeSectionManager {
         field.style.borderWidth = "5px";
     }
     
+    /**
+     * Style an error message div.
+     * @param {HTMLElement} errorDiv - The error message element.
+     */
     designErrorDiv(errorDiv) {
         errorDiv.style.color = "lavender";
         errorDiv.style.fontSize = "0.9em";
@@ -121,6 +161,9 @@ class HomeSectionManager {
         errorDiv.style.padding = "10px";
     }
     
+    /**
+     * Clear all error message and field highlights.
+     */
     clearErrors() {
         document.querySelectorAll(".error-message").forEach( el => el.remove());
         document.querySelectorAll("input, textarea").forEach( el => {

@@ -1,3 +1,10 @@
+/**
+ * Video Player Control System
+ * 
+ * Provides interactive controls for video playback and sizing:
+ * - Play/pause functionality
+ * - Dynamic video resizing
+ */
 $(document).ready(function() {
     const $playPauseButton = $('#play-pause-button');
     const $bigButton = $('#big-button');
@@ -6,6 +13,7 @@ $(document).ready(function() {
     const $video = $('#video');
     const $videoElement = $video.get(0);
 
+    /** Play/pause toggle functionality */
     $playPauseButton.click(function() {
         if($videoElement.paused) {
             $videoElement.play();
@@ -14,6 +22,7 @@ $(document).ready(function() {
         }
     });
 
+    /** Video sizing controls */
     $bigButton.click(function() {
         $video.css('width', '100%');
     });

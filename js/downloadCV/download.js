@@ -1,3 +1,8 @@
+/**
+ * CV dowload handler
+ * 
+ * Handles the download of a PDF CV file with proper error handling.
+ */
 const download = document.getElementById("download-cv");
 
 download.addEventListener("click", (e) => {

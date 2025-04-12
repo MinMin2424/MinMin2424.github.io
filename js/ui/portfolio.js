@@ -1,9 +1,23 @@
+/**
+ * Project Portfolio Navigation System
+ * 
+ * Manages a project viewer with:
+ * - Next/previous navigation
+ * - Browser history integration
+ * - State persistence
+ * - Responsive UI updates
+ */
 $(document).ready(function() {
     const $projects = $('.project');
     const $prevButton = $('.prev-button');
     const $nextButton = $('.next-button');
     let currentIndex = 0;
 
+    /**
+     * Updates the project display and button states.
+     * - Shows/hides projects based on currentIndex
+     * - Disables buttons at boundaries
+     */
     function updateProjectDisplay() {
         $projects.each(function(index) {
             $(this).toggleClass('active', index === currentIndex);
@@ -18,6 +32,7 @@ $(document).ready(function() {
         }, 0);
     }
 
+    /** Initialize state from browser history on page load */
     $(window).on('load', function() {
         if (history.state && history.state.projectIndex !== undefined) {
             currentIndex = history.state.projectIndex;
@@ -25,6 +40,7 @@ $(document).ready(function() {
         }
     });
 
+    /** Handle browser back/forward navigation */
     $(window).on('popstate', function(e) {
         if (e.originalEvent.state && e.originalEvent.state.projectIndex !== undefined) {
             currentIndex = e.originalEvent.state.projectIndex;
@@ -32,6 +48,7 @@ $(document).ready(function() {
         }
     });
 
+    /** Next button click handler */
     $nextButton.click(function() {
         if (currentIndex < $projects.length - 1) {
             currentIndex++;
@@ -40,6 +57,7 @@ $(document).ready(function() {
         }
     });
 
+    /** Previous button click handler */
     $prevButton.click(function() {
         if (currentIndex > 0) {
             currentIndex--;
@@ -48,10 +66,12 @@ $(document).ready(function() {
         }
     });
 
+    /** Preserve state when navigating to project details */
     $('.btn a').on('click', function() {
         history.replaceState({ projectIndex: currentIndex }, '', 'index.html');
     })
 
+    /** Initialize the display */
     updateProjectDisplay();
 });
 

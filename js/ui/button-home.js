@@ -1,3 +1,8 @@
+/**
+ * Home Button Hover Effect
+ * 
+ * Swaps the home button image on hover state changes.
+ */
 $(document).ready(function() {
     const $img = $('#button-home');
     $img.on({
