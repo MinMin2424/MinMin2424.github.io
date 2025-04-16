@@ -38,7 +38,7 @@
 
 .project {
     display: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 .project img {
@@ -84,6 +84,10 @@
     align-items: center;
 }
 
+.project .btn:hover {
+    background: linear-gradient(135deg, #08813a, #002661);
+}
+
 .project .btn a {
     text-decoration: none;
     color: lavender;
@@ -99,13 +103,21 @@
 
 .nav-button {
     color: lavender;
-    border: solid 5px lavender;
-    padding: 10px;
+    border: solid 3px lavender;
+    /* padding: 10px; */
     cursor: pointer;
     border-radius: 50%;
     font-size: 1.2em;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button:hover {
+    transform: scale(1.2);
+    background: linear-gradient(135deg, #08813a, #002661);
 }
 
 .nav-button:disabled {
@@ -117,9 +129,9 @@
 }
 
 .nav-button #arrow-left {
-    width: 100%;
+    width: 90%;
 }
 
 .nav-button #arrow-right {
-    width: 100%;
+    width: 90%;
 }

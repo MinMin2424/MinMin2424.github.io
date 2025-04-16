@@ -87,6 +87,10 @@ nav ul li a:hover {
     height: 30px;
 }
 
+.burger-menu img:hover {
+    transform: scale(1.2);
+}
+
 .side-nav-content {
     padding: 20px;
     margin-top: 60px;
@@ -112,6 +116,22 @@ nav ul li a:hover {
 
 .side-nav-content ul li a img {
     width: 30px;
+}
+
+.side-nav-content ul li a img:hover {
+    transform: scale(1.2);
+}
+
+.side-nav-content ul li a img.active-icon {
+    display: none;
+}
+
+.side-nav-content ul li a.active img.active-icon {
+    display: inline;
+}
+
+.side-nav-content ul li a.active img.inactive-icon {
+    display: none;
 }
 
 .side-nav-content ul li a span {

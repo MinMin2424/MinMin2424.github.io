@@ -52,3 +52,7 @@
     width: 30px;
     margin-bottom: 10px;
 }
+
+.contact-icons .contact-pictures:hover {
+    transform: scale(1.3);
+}
