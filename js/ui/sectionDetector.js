@@ -1,3 +1,9 @@
+/**
+ * Dynamic Navigation Highlighting
+ * 
+ * Automatically updates navigation link states based on scroll position,
+ * highlighting the current visible section with visual feedback.
+ */
 $(document).ready(function() {
     const $sections = $('section');
     const $navLinks = $('.side-nav a');
@@ -15,8 +21,8 @@ $(document).ready(function() {
             });
         },
         {
-            threshold: 0.1,
-            rootMargin: "-20% 0px"
+            threshold: 0.2,
+            rootMargin: "-20% 0px -15% 0px"
         }
     );
 

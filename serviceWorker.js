@@ -56,6 +56,7 @@ const listOfUrlsToCache = [
     '/js/ui/dots.js',
     '/js/ui/portfolio.js',
     '/js/ui/scroll.js',
+    '/js/ui/sectionDetector.js',
     '/js/ui/side-nav.js',
     '/js/ui/video.js',
 
