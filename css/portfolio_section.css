@@ -84,10 +84,6 @@
     align-items: center;
 }
 
-.project .btn:hover {
-    background: linear-gradient(135deg, #08813a, #002661);
-}
-
 .project .btn a {
     text-decoration: none;
     color: lavender;
@@ -113,11 +109,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.nav-button:hover {
-    transform: scale(1.2);
-    background: linear-gradient(135deg, #08813a, #002661);
 }
 
 .nav-button:disabled {
