@@ -6,6 +6,8 @@
  */
 document.addEventListener('mousemove', (e) => {
 
+    if (window.innerWidth < 450) return;
+
     /** Calculate cursor position as percentage of viewport dimensions */
     const x = (e.clientX / window.innerWidth) * 100;
     const y = (e.clientY / window.innerHeight) * 100;
