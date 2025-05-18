@@ -3,7 +3,7 @@
  * 
  * Implements offline-first strategy with cache management.
  */
-const CACHE_NAME = 'my-cache-v3';
+const CACHE_NAME = 'my-cache-v4';
 
 /** 
  * List of assets to cache during installation 
@@ -164,19 +164,18 @@ self.addEventListener('fetch', (e) => {
  * Activate Event
  * Cleans up old cache versions.
  */
-self.addEventListener('active', (e) => {
-    const cacheList = [CACHE_NAME];
+self.addEventListener('activate', (e) => {
+    const currentCache = CACHE_NAME;
     e.waitUntil(
-        caches.keys().then( (cacheNames) => {
+        caches.keys().then((cacheNames) => {
             return Promise.all(
-                cacheNames.map(cacheName => {
-                    if (cacheList.indexOf(cacheName) === -1) {
+                cacheNames.map((cacheName) => {
+                    if (cacheName.startsWith('my-cache-') && cacheName !== currentCache) {
+                        console.log('Delete old cache:', cacheName);
                         return caches.delete(cacheName);
                     }
                 })
             );
-        }).then(() => {
-            return self.clients.claim();
-        })
+        }).then(() => self.clients.claim())
     );
 });
