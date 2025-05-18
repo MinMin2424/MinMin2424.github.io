@@ -3,7 +3,7 @@
  * 
  * Implements offline-first strategy with cache management.
  */
-const CACHE_NAME = 'my-cache-v1';
+const CACHE_NAME = 'my-cache-v2';
 
 /** 
  * List of assets to cache during installation 
