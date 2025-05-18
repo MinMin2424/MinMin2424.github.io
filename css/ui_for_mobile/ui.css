@@ -57,9 +57,30 @@
 }
 
 /* PROJECT PAGES */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
     .main-section {
         width: 90%;
         padding: 15px;
+    }
+}
+
+/* PORTFOLIO SECTION */
+@media screen and (max-width: 700px) { 
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .date {
+        width: 100% !important;
+    }
+
+    .info {
+        width: 90% !important;
+    }
+
+    .info h4 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        align-self: center !important;
     }
 }

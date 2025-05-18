@@ -112,6 +112,7 @@ const listOfUrlsToCache = [
     '/images/info.png',
     '/images/arrow-left.png',
     '/images/arrow-right.png',
+    '/images/github-nav.png',
 
     // /* VIDEOS */
     // '/video/EscapeGame.mp4',
