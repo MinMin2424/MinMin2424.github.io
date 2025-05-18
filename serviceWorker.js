@@ -3,7 +3,7 @@
  * 
  * Implements offline-first strategy with cache management.
  */
-const CACHE_NAME = 'my-cache-v2';
+const CACHE_NAME = 'my-cache-v3';
 
 /** 
  * List of assets to cache during installation 
@@ -124,6 +124,7 @@ const listOfUrlsToCache = [
  * Caches all specified assets during service worker installation.
  */
 self.addEventListener('install', (e) => {
+    self.skipWaiting();
     e.waitUntil(
         caches.open(CACHE_NAME)
         .then((cache) => cache.addAll(listOfUrlsToCache))
@@ -174,6 +175,8 @@ self.addEventListener('active', (e) => {
                     }
                 })
             );
+        }).then(() => {
+            return self.clients.claim();
         })
     );
 });
