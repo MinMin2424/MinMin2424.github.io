@@ -1,0 +1,11 @@
+{
+    "title": "Welcome to my personal web",
+    "description": "My name is Mina Tranová, and you will find some information about me and my projects there."
+}
+
+{
+    // <h1 id="home-title">Vítejte na mém osobním webu</h1>
+    // <p id="home-description">
+    //     Jmenuji se Mina Tranová a zde naleznete informace o mně a mých projektech.
+    // </p>
+}
